@@ -1,4 +1,6 @@
-# Welcome to your new EPITA's config
+# ⚠️ This flake has yet never been tested, please try it yourself or stay in touch for a release
+
+## Welcome to your new EPITA's config
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvPi0HkU5Ufv1065pf84EysQoC5BmfUX8yCUY3YJgPtx6p3i-_XdbcJY&s=10" alt="NixOS Logo" width="200"/>
 
 ## Flake Content :
@@ -8,7 +10,7 @@
  - SwayBG
 
 ## Space Needed : 
-__~400Mo__ Compressed / 1.6Go Decompressed
+__~400Mo__ Compressed / 1.6Go Decompressed - Estimated Time to download : XXXX (in Epita machine rooms)
 
 
 ## How to install :
