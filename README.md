@@ -12,5 +12,5 @@ __~400Mo__ Compressed / 1.57Go Decompressed
 
 ## How to install :
 ```bash
-    home-manager switch -b backup --flake github:NydeTvs/epita-config#epita
+home-manager switch -b backup --flake github:NydeTvs/epita-config#epita
 ```
