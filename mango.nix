@@ -11,6 +11,13 @@ in
 
     autostart_sh = ''
       dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+      if [ -f "$HOME/afs/wallpaper.png" ]; then
+        ${pkgs.swaybg}/bin/swaybg -i "$HOME/afs/wallpaper.png" -m fill &
+      elif [ -f "$HOME/afs/wallpaper.jpg" ]; then
+        ${pkgs.swaybg}/bin/swaybg -i "$HOME/afs/wallpaper.jpg" -m fill &
+      else
+        ${pkgs.swaybg}/bin/swaybg -c "${theme.colors.background}" &
+      fi
       waybar &
     '';
 

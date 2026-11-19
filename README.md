@@ -5,6 +5,7 @@
  - Mango Window Manager (dwm based)
  - Neovim
  - Waybar
+ - SwayBG
 
 ## Space Needed : 
 __~400Mo__ Compressed / 1.57Go Decompressed
@@ -14,3 +15,23 @@ __~400Mo__ Compressed / 1.57Go Decompressed
 ```bash
 home-manager switch -b backup --flake github:NydeTvs/epita-config#epita
 ```
+
+## Features :
+All the usual EPITA keybinds are kept :
+- Win+D = Open drun (app launcher)
+- Win+Return = Open terminal
+- Win+Shift+Q = Close window
+
+Other features were added to fit with wayland :
+
+```
+powermenu
+set-wallpaper <path/to/image.png/jpg>
+```
+
+- powermenu : \ 
+Win+Shift+E = Open powermenu (same behavior as usual but in wayland way)
+- set-wallpaper : \
+Param: path/to/a/image.png|jpg \
+Allows you to dynamically change your wallpaper. Creates a copy of the image provided in afs so it is kept after reboot.
+
