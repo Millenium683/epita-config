@@ -6,6 +6,19 @@ in
 {
   programs.waybar = {
     enable = true;
+
+    package = pkgs.waybar.override {
+      cavaSupport = false;
+      mpdSupport = false;
+      mprisSupport = false;
+      wireplumberSupport = false;
+      sndioSupport = false;
+      jackSupport = false;
+      rfkillSupport = false;
+      evdevSupport = false;
+      upowerSupport = false;
+      experimentalPatches = false;
+    };
     
     settings = {
       mainBar = {
@@ -17,7 +30,7 @@ in
         margin-bottom = theme.apps.waybar.margin;
         
         modules-left = [ "mango/workspaces" "mango/window" ];
-        modules-right = [ "mango/layout" "custom/navmenu" "mango/language" "network" "bluetooth" "pulseaudio" "battery" "tray" "clock" ];
+        modules-right = [ "mango/layout" "mango/language" "network" "bluetooth" "pulseaudio" "tray" "clock" ];
 
         "mango/workspaces" = {
           disable-markup = false;
@@ -45,24 +58,6 @@ in
         "mango/language" = {
           format = " <span text-transform='uppercase'>{short}</span>";
           on-click = "toggle-vkbd";
-        };
-
-        "custom/navmenu" = {
-          format = "";
-          tooltip = false;
-          on-click = "navmenu";
-        };
-
-        "battery" = {
-          interval = 60;
-          states = {
-            warning = 20;
-            critical = 5;
-          };
-          format = "{icon} {capacity}%";
-          format-charging = "󰂄 {capacity}%";
-          format-plugged = "  {capacity}%";
-          format-icons = [ "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
         };
 
         "pulseaudio" = {
@@ -163,7 +158,7 @@ in
         color: ${theme.colors.foreground};
       }
 
-      #clock, #battery, #pulseaudio, #network, #bluetooth, #tray, #window, #language, #custom-navmenu {
+      #clock, #pulseaudio, #network, #bluetooth, #tray, #window, #language {
         padding: 0 10px;
         margin: 0 5px;
       }
@@ -175,22 +170,6 @@ in
       #clock {
         color: ${theme.colors.green};
         font-weight: bold;
-      }
-
-      #battery {
-        color: ${theme.colors.foreground};
-      }
-
-      #battery.warning {
-        color: ${theme.colors.brightYellow};
-      }
-
-      #battery.critical {
-        color: ${theme.colors.red};
-      }
-      
-      #battery.charging {
-        color: ${theme.colors.green};
       }
 
       #pulseaudio {
