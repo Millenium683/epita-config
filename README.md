@@ -1,5 +1,5 @@
 # Welcome to your new EPITA's config
-<img src="https://gitlab.com/uploads/-/system/project/avatar/40517887/68747470733a2f2f692e696d6775722e636f6d2f367146436c41312e706e67.png" alt="NixOS Logo" width="200"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvPi0HkU5Ufv1065pf84EysQoC5BmfUX8yCUY3YJgPtx6p3i-_XdbcJY&s=10" alt="NixOS Logo" width="200"/>
 
 ## Flake Content :
  - Mango Window Manager (dwm based)
@@ -8,7 +8,7 @@
  - SwayBG
 
 ## Space Needed : 
-__~400Mo__ Compressed / 1.57Go Decompressed
+__~400Mo__ Compressed / 1.6Go Decompressed
 
 
 ## How to install :
