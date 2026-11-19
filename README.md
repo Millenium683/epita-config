@@ -35,3 +35,9 @@ Win+Shift+E = Open powermenu (same behavior as usual but in wayland way)
 Param: path/to/a/image.png|jpg \
 Allows you to dynamically change your wallpaper. Creates a copy of the image provided in afs so it is kept after reboot.
 
+## Featured Repositories :
+[MangoWM](https://github.com/mangowm/mango) \
+[Neovim](https://github.com/neovim/neovim) \
+[Waybar](https://github.com/alexays/waybar) \
+[SwayBG](https://github.com/swaywm/swaybg) 
+
