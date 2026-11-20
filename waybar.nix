@@ -57,7 +57,6 @@ in
         
         "mango/language" = {
           format = " <span text-transform='uppercase'>{short}</span>";
-          on-click = "toggle-vkbd";
         };
 
         "pulseaudio" = {
@@ -72,7 +71,7 @@ in
           interval = 30;
           format-wifi = "󰖩 {essid}";
           format-disconnected = "󰖪";
-          format-ethernet = "󰈁 {essid}";
+          format-ethernet = "󰖩 {essid}";
           tooltip-format = " {bandwidthDownBytes} |  {bandwidthUpBytes} : {ipaddr}";
         };
 
