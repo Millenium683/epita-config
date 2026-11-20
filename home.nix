@@ -16,7 +16,8 @@ in
 
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-        nerd-fonts.jetbrains-mono
+        jetbrains-mono
+        nerd-fonts.symbols-only
         wmenu
         (writeShellScriptBin "powermenu" ''
         choice=$(printf "Logout\nReboot\nShutdown" | wmenu -p "Session:")

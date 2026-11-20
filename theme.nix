@@ -63,9 +63,13 @@
 
   fonts = {
     main = {
-      name = "JetBrainsMono Nerd Font";
+      name = "JetBrains Mono";
       size = 11;
       pkg = "jetbrains-mono";
+    };
+    symbols = {
+      name = "Symbols Nerd Font";
+      pkg = "nerd-fonts.symbols-only";
     };
   };
   

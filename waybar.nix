@@ -79,7 +79,7 @@ in
 
     style = ''
       * {
-        font-family: "${theme.fonts.main.name}";
+        font-family: "${theme.fonts.main.name}", "${theme.fonts.symbols.name}";
         font-size: ${toString theme.apps.waybar.fontSize}px;
         border: none;
         border-radius: 0;
