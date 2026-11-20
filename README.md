@@ -12,7 +12,7 @@
  - Jetbrains-Mono Nerd Font
 
 ## Space Needed : 
-__~400Mo__ Compressed / 1.6Go Decompressed - Estimated Time to download : XXXX (in Epita machine rooms)
+__~XXXXMo__ Compressed / XXXXGo Decompressed - Estimated Time to download : XXXX (in Epita machine rooms)
 
 
 ## How to install :
