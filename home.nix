@@ -1,5 +1,8 @@
 { inputs, pkgs, lib, ... }:
 
+let
+  username = builtins.getEnv "USER";
+in
 {
   imports = [
     ./mango.nix
@@ -7,8 +10,8 @@
     ./nixvim.nix
   ];
 
-  home.username = "jules.hoeltzel";
-  home.homeDirectory = "/home/jules.hoeltzel";
+  home.username = username;
+  home.homeDirectory = "/home/$(username)";
   home.stateVersion = "24.11";
 
   fonts.fontconfig.enable = true;
