@@ -44,5 +44,8 @@ in
           pkill swaybg || true
           ${pkgs.swaybg}/bin/swaybg -i "$HOME/afs/wallpaper.$ext" -m fill >/dev/null 2>&1 &
         '')
+        (writeShellScriptBin "alacritty-fetch" ''
+          exec alacritty -e sh -c 'fastfetch; exec "''${SHELL:-bash}"'
+        '')
   ];
 }
