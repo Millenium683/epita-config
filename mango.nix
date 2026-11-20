@@ -29,26 +29,18 @@ in
     border_radius=6
     border_px=2
     focus_color=${theme.apps.mango.focuscolor}
-    blur=1
-    blur_optimized=1
-    blur_params_radius=5
+    blur=0
+    shadows=0
     gap_outer_horizontal=5
     gap_outer_vertical=5
 
-    # Layer Rules
-    blur_layer=1
-    layer_rule=no_blur:1,layer_name:rofi
-    layer_rule=no_blur:1,layer_name:mako
-    layer_rule=no_blur:1,layer_name:swayosd
-    layer_rule=no_blur:1,layer_name:slurp
-
     # Animations
     animations=1
-    layer_animations=1
+    layer_animations=0
     layer_animation_type_open=slide
     layer_animation_type_close=slide
-    animation_duration_open=400
-    animation_duration_close=200
+    animation_duration_open=150
+    animation_duration_close=100
     animation_curve_open=0.16, 1, 0.3, 1
     animation_curve_close=0.5, 0, 1, 1
     animation_curve_move=0.25, 1, 0.5, 1
