@@ -14,8 +14,25 @@ __~400Mo__ Compressed / 1.6Go Decompressed - Estimated Time to download : XXXX (
 
 
 ## How to install :
+When you are in the login screen (SDDM) at a EPITA computer, press Ctrl+Alt + Any F1/F2/F3 key that opens a new TTY. \
+Then, login using your credentials as usual then, there is two methods : \
+#### Auto install and launch :
+You can clone the "start.sh" file from this git into your afs so it is persistent. 
+Make sure it is executable, if not :
+```bash
+chmod +x start.sh
+```
+Then run ./start.sh, it will install the flake and directly launch a Mango session. \
+Note that this method needs you to clone a file from this repository, the second one doesn't.
+#### Manual install :
+This procedure is the same as start.sh but by this method, nothing will stay in your afs. \
+Run this command to install the flake :
 ```bash
 home-manager switch -b backup --flake github:NydeTvs/epita-config#epita
+```
+When the installation is done :
+```bash
+exec mango
 ```
 
 ## Features :
