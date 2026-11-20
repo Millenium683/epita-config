@@ -8,6 +8,8 @@
  - Neovim
  - Waybar
  - SwayBG
+ - WMenu
+ - Jetbrains-Mono Nerd Font
 
 ## Space Needed : 
 __~400Mo__ Compressed / 1.6Go Decompressed - Estimated Time to download : XXXX (in Epita machine rooms)
@@ -15,7 +17,7 @@ __~400Mo__ Compressed / 1.6Go Decompressed - Estimated Time to download : XXXX (
 
 ## How to install :
 When you are in the login screen (SDDM) at a EPITA computer, press Ctrl+Alt + Any F1/F2/F3 key that opens a new TTY. \
-Then, login using your credentials as usual then, there is two methods : \
+Then, login using your credentials as usual then, there is two methods : 
 #### Auto install and launch :
 You can clone the "start.sh" file from this git into your afs so it is persistent. 
 Make sure it is executable, if not :
@@ -48,15 +50,15 @@ powermenu
 set-wallpaper <path/to/image.png/jpg>
 ```
 
-- powermenu : \ 
+- powermenu : 
 Win+Shift+E = Open powermenu (same behavior as usual but in wayland way)
-- set-wallpaper : \
-Param: path/to/a/image.png|jpg \
+- set-wallpaper : Param: path/to/a/image.png|jpg \
 Allows you to dynamically change your wallpaper. Creates a copy of the image provided in afs so it is kept after reboot.
 
 ## Featured Repositories :
 [MangoWM](https://github.com/mangowm/mango) \
 [Neovim](https://github.com/neovim/neovim) \
 [Waybar](https://github.com/alexays/waybar) \
-[SwayBG](https://github.com/swaywm/swaybg) 
+[SwayBG](https://github.com/swaywm/swaybg) \
+[WMenu](https://codeberg.org/adnano/wmenu)
 
