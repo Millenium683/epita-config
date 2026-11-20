@@ -1,6 +1,3 @@
-# List of apps with static settings (needs manual change) :
-# - krita
-
 {
   colors = {
     background = "#0D0F12";
@@ -33,7 +30,6 @@
   };
 
   apps = {
-    # To change Nix Logo : use a different.png at nixos-config/assets/fastfetch
     fastfetch = {
       borders = "90";
       system = "yellow";
@@ -42,17 +38,6 @@
     };
     mango = {
       focuscolor = "0x516c93ff";
-    };
-    swaylock = {
-      inside = "1a1f2bCC";
-      ring = "00aaffFF";
-      ringClear = "00ffaaFF";
-      ringVer = "ff8800FF";
-      ringWrong = "e60000FF";
-      keyHl = "ff00aaFF";
-      bsHl = "e60000FF";
-      text = "ffffffFF";
-      transparent = "00000000";
     };
     waybar = {
       height = 35;
@@ -71,16 +56,5 @@
       name = "Symbols Nerd Font";
       pkg = "nerd-fonts.symbols-only";
     };
-  };
-  
-  cursor = {
-    name = "catppuccin-mocha-dark-cursors";
-    pkg = "catppuccin-cursors.mochaDark";
-    size = 20;
-  };
-
-  icons = {
-    name = "Colloid-Dark";
-    pkg = "colloid-icon-theme";
   };
 }

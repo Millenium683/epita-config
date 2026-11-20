@@ -8,6 +8,7 @@ in
     ./mango.nix
     ./waybar.nix
     ./neovim.nix
+    ./fastfetch.nix
   ];
 
   home.username = username;
