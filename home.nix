@@ -7,7 +7,7 @@ in
   imports = [
     ./mango.nix
     ./waybar.nix
-    ./nixvim.nix
+    ./neovim.nix
   ];
 
   home.username = username;
