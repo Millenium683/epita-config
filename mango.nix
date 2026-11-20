@@ -8,6 +8,7 @@ in
 
   wayland.windowManager.mango = {
     enable = true;
+    package = pkgs.mango;
 
     autostart_sh = ''
       dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
@@ -26,7 +27,9 @@ in
       border_radius = 6;
       border_px = 2;
       focus_color = theme.apps.mango.focuscolor;
-      blur = 100;
+      blur = 1;
+      blur_optimized = 1;
+      blur_params_radius = 5;
       gap_outer_horizontal = 5; # Horizontal outer gap
       gap_outer_vertical = 5; # Vertical outer gap
 

@@ -2,7 +2,8 @@
   description = "Config Home Manager - EPITA";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # If EPITA updates the commit of nixpkgs, please replace the commit hash 
+    nixpkgs.url = "github:nixos/nixpkgs/2074cc6";
 
     home-manager = {
       url = "github:nix-community/home-manager";

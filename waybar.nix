@@ -7,19 +7,6 @@ in
   programs.waybar = {
     enable = true;
 
-    package = pkgs.waybar.override {
-      cavaSupport = false;
-      mpdSupport = false;
-      mprisSupport = false;
-      wireplumberSupport = false;
-      sndioSupport = false;
-      jackSupport = false;
-      rfkillSupport = false;
-      evdevSupport = false;
-      upowerSupport = false;
-      experimentalPatches = false;
-    };
-    
     settings = {
       mainBar = {
         layer = "top";
