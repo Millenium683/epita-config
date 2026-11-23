@@ -86,7 +86,7 @@ in
       }
 
       window#waybar {
-        background-color: alpha(${theme.colors.background}, 0.2);
+        background-color: alpha(${theme.colors.background}, 0.4);
         color: ${theme.colors.foreground};
         border-radius: 8px;
       }
