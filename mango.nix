@@ -23,7 +23,7 @@ in
   };
 
   xdg.configFile."mango/config.conf".text = ''
-    exec-once=${config.xdg.configHome}/mango/autostart.sh
+    exec_once=${config.xdg.configHome}/mango/autostart.sh
 
     # Window Rules
     border_radius=6
