@@ -4,6 +4,8 @@ let
   theme = import ./theme.nix;
 in
 {
+  xdg.configFile."kitty/kitty.conf".force = true;
+
   programs.kitty = {
     enable = true;
 

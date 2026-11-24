@@ -1,6 +1,8 @@
 { ... }:
 
 {
+  home.file.".bashrc".force = true;
+
   programs.bash = {
     enable = true;
     enableCompletion = true;
