@@ -4,8 +4,6 @@ let
   theme = import ./theme.nix;
 in
 {
-  xdg.configFile."starship.toml".force = true;
-
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
