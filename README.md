@@ -46,8 +46,7 @@ exec mango
 ## Features :
 All the usual EPITA keybinds are kept :
 - Win+D = Open drun (app launcher)
-- Win+Return = Open Kitty terminal (with Fastfetch & Starship)
-- Win+Shift+Return = Open Alacritty terminal (fallback)
+- Win+Return = Open terminal (Kitty)
 - Win+Shift+Q = Close window
 
 Other features were added to fit with wayland :
