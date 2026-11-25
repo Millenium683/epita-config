@@ -20,14 +20,7 @@ in
         "$git_state"
         "$git_status"
         "$c"
-        "$cpp"
         "$python"
-        "$rust"
-        "$ocaml"
-        "$dotnet"
-        "$java"
-        "$nodejs"
-        "$golang"
         "$nix_shell"
         "$cmd_duration"
         "$fill"
@@ -89,53 +82,10 @@ in
         format = "via [$symbol($version(-$name) )]($style)";
       };
 
-      cpp = {
-        disabled = false;
-        symbol = " ";
-        style = "bold ${theme.colors.cyan}";
-        format = "via [$symbol($version(-$name) )]($style)";
-      };
-
       python = {
         symbol = " ";
         style = "bold ${theme.colors.yellow}";
         format = "via [$symbol$pyenv_prefix($version )(\\($virtualenv\\) )]($style)";
-      };
-
-      rust = {
-        symbol = "󱘗 ";
-        style = "bold ${theme.colors.orange}";
-        format = "via [$symbol($version )]($style)";
-      };
-
-      ocaml = {
-        symbol = " ";
-        style = "bold ${theme.colors.orange}";
-        format = "via [$symbol($version )(\\($switch_indicator$switch_name\\) )]($style)";
-      };
-
-      dotnet = {
-        symbol = "󰪮 ";
-        style = "bold ${theme.colors.magenta}";
-        format = "via [$symbol($version )]($style)";
-      };
-
-      java = {
-        symbol = " ";
-        style = "bold ${theme.colors.red}";
-        format = "via [$symbol($version )]($style)";
-      };
-
-      nodejs = {
-        symbol = " ";
-        style = "bold ${theme.colors.green}";
-        format = "via [$symbol($version )]($style)";
-      };
-
-      golang = {
-        symbol = " ";
-        style = "bold ${theme.colors.cyan}";
-        format = "via [$symbol($version )]($style)";
       };
 
       nix_shell = {
