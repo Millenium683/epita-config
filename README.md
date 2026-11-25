@@ -5,8 +5,8 @@
 
 ## Flake Content :
  - Mango Window Manager (dwm based)
- - Kitty (Tokyo Night theme, transparency, powerline tabs)
- - Starship (2-line Tokyo Night prompt) & Bash
+ - Kitty
+ - Starship
  - Neovim
  - Waybar
  - Fastfetch
@@ -36,7 +36,7 @@ Note that this method needs you to clone a file from this repository, the second
 This procedure is the same as start.sh but by this method, nothing will stay in your afs. \
 Run this command to install the flake :
 ```bash
-home-manager switch -b backup --impure --flake github:Millenium683/epita-config#epita
+home-manager switch -b backup --impure --flake github:NydeTvs/epita-config#epita
 ```
 When the installation is done :
 ```bash
