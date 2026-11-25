@@ -10,7 +10,6 @@ in
     ./neovim.nix
     ./fastfetch.nix
     ./kitty.nix
-    ./bash.nix
     ./starship.nix
   ];
 
