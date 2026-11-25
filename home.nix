@@ -20,8 +20,7 @@ in
         jetbrains-mono
         nerd-fonts.symbols-only
         wmenu
-        swaylock
-        swayidle
+
         (writeShellScriptBin "i3lock" ''
             (
                 sleep 3600
@@ -29,8 +28,11 @@ in
             ) &
             TIMER_PID=$!
 
-        ${pkgs.swaylock}/bin/swaylock \
-            --pam-service i3lock \
+        ${pkgs.swaylock.overrideAttrs (old: {
+          postPatch = (old.postPatch or "") + ''
+            substituteInPlace pam.c --replace-fail '"swaylock"' '"i3lock"'
+          '';
+        })}/bin/swaylock \
             --color 0D0F12 \
             --inside-color 15171C \
             --ring-color 4A8CFF \
@@ -38,8 +40,9 @@ in
             --bs-hl-color FF2E50 \
             --text-color E0E7FF
 
+        pkill -P "$TIMER_PID" 2>/dev/null || true
         kill "$TIMER_PID" 2>/dev/null || true
-        '')
+        '')   
         (writeShellScriptBin "powermenu" ''
         choice=$(printf "Logout\nReboot\nShutdown" | wmenu -p "Session:")
         case "$choice" in
