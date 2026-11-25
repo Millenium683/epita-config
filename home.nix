@@ -30,6 +30,7 @@ in
             TIMER_PID=$!
 
         ${pkgs.swaylock}/bin/swaylock \
+            --pam-service i3lock \
             --color 0D0F12 \
             --inside-color 15171C \
             --ring-color 4A8CFF \
