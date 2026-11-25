@@ -5,7 +5,6 @@
 
 ## Flake Content :
  - Mango Window Manager (dwm based)
- - Kitty (Tokyo Night theme, transparency, powerline tabs)
  - Starship (2-line Tokyo Night prompt) & Bash
  - Neovim
  - Waybar
@@ -33,7 +32,7 @@ Note that this method needs you to clone a file from this repository, the second
 This procedure is the same as start.sh but by this method, nothing will stay in your afs. \
 Run this command to install the flake :
 ```bash
-home-manager switch -b backup --impure --flake github:Millenium683/epita-config#epita
+home-manager switch -b "backup-$(date +%s)" --impure --flake "github:Millenium683/epita-config?ref=feat/sans-kitty#epita"
 ```
 When the installation is done :
 ```bash
@@ -43,8 +42,7 @@ exec mango
 ## Features :
 All the usual EPITA keybinds are kept :
 - Win+D = Open drun (app launcher)
-- Win+Return = Open Kitty terminal (with Fastfetch & Starship)
-- Win+Shift+Return = Open Alacritty terminal (fallback)
+- Win+Return = Open Alacritty terminal (with Fastfetch & Starship)
 - Win+Shift+Q = Close window
 
 Other features were added to fit with wayland :
@@ -61,7 +59,6 @@ Allows you to dynamically change your wallpaper. Creates a copy of the image pro
 
 ## Featured Repositories :
 [MangoWM](https://github.com/mangowm/mango) \
-[Kitty](https://github.com/kovidgoyal/kitty) \
 [Starship](https://github.com/starship/starship) \
 [Neovim](https://github.com/neovim/neovim) \
 [Waybar](https://github.com/alexays/waybar) \

@@ -47,11 +47,6 @@
       margin = 8;
       fontSize = 12;
     };
-    kitty = {
-      opacity = 0.88;
-      padding = 10;
-      fontSize = 11;
-    };
   };
 
   fonts = {

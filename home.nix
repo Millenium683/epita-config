@@ -9,7 +9,6 @@ in
     ./waybar.nix
     ./neovim.nix
     ./fastfetch.nix
-    ./kitty.nix
     ./bash.nix
     ./starship.nix
   ];
@@ -46,9 +45,6 @@ in
           cp "$1" "$HOME/afs/wallpaper.$ext"
           pkill swaybg || true
           ${pkgs.swaybg}/bin/swaybg -i "$HOME/afs/wallpaper.$ext" -m fill >/dev/null 2>&1 &
-        '')
-        (writeShellScriptBin "kitty-fetch" ''
-          exec ${pkgs.kitty}/bin/kitty -e bash -c 'fastfetch; exec bash'
         '')
         (writeShellScriptBin "alacritty-fetch" ''
           exec alacritty -e sh -c 'fastfetch; exec bash'
