@@ -72,8 +72,5 @@ in
         (writeShellScriptBin "kitty-fetch" ''
           exec ${pkgs.kitty}/bin/kitty -e bash -c 'fastfetch; exec bash'
         '')
-        (writeShellScriptBin "alacritty-fetch" ''
-          exec alacritty -e sh -c 'fastfetch; exec bash'
-        '')
   ];
 }
