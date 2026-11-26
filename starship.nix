@@ -6,7 +6,7 @@ in
 {
   programs.starship = {
     enable = true;
-    enableBashIntegration = true;
+    enableBashIntegration = false;
 
     settings = {
       add_newline = true;

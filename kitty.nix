@@ -14,7 +14,7 @@ in
       size = theme.apps.kitty.fontSize;
     };
 
-    shellIntegration.enableBashIntegration = true;
+    shellIntegration.enableBashIntegration = false;
 
     settings = {
       shell = "bash";
