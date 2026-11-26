@@ -12,6 +12,7 @@ in
     ./kitty.nix
     ./bash.nix
     ./starship.nix
+    ./lock.nix
   ];
 
   home.username = username;

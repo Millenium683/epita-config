@@ -10,6 +10,7 @@
  - Neovim
  - Waybar
  - Fastfetch
+ - Hyprlock (commande `i3lock` avec timer HH:MM, login et auto-logout 1h)
  - SwayBG
  - WMenu
  - Jetbrains-Mono + Symbols Nerd Font
@@ -45,6 +46,7 @@ All the usual EPITA keybinds are kept :
 - Win+D = Open drun (app launcher)
 - Win+Return = Open Kitty terminal (with Fastfetch & Starship)
 - Win+Shift+Return = Open Alacritty terminal (fallback)
+- Win+L = Lock screen (`i3lock`)
 - Win+Shift+Q = Close window
 
 Other features were added to fit with wayland :

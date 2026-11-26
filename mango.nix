@@ -53,6 +53,7 @@ in
     bind=super+shift,Return,spawn,alacritty-fetch
     bind=super+shift,q,smartkillclient
     bind=super,d,spawn,wmenu-run
+    bind=super,l,spawn,i3lock
     bind=super+shift,e,spawn,powermenu
 
     # Navigation Keybinds
